@@ -2,20 +2,10 @@ import { formatEther, parseEther } from "viem";
 import hre from "hardhat";
 
 async function main() {
-  const currentTimestampInSeconds = Math.round(Date.now() / 1000);
-  const unlockTime = BigInt(currentTimestampInSeconds + 60);
-
-  const lockedAmount = parseEther("0.001");
-
-  console.log("pk:", process.env.PRIVATE_KEY)
-  const lock = await hre.viem.deployContract("Lock", [unlockTime], {
-    value: lockedAmount,
-  });
+  const contract = await hre.viem.deployContract("MyL1ERC721Gateway");
 
   console.log(
-    `Lock with ${formatEther(
-      lockedAmount
-    )}ETH and unlock timestamp ${unlockTime} deployed to ${lock.address}`
+    `L1Gateway deployed to ${contract.address}`
   );
 }
 

@@ -987,10 +987,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@scroll-tech/contracts@npm:^0.1.0":
+"@scroll-tech/contracts@npm:0.1.0":
   version: 0.1.0
   resolution: "@scroll-tech/contracts@npm:0.1.0"
   checksum: 61aa3ca76043276dd38dfb2ed67c019fcd1bf42c8b5d33726e6addfa95cad96ba057988cc00572159c47fcdbbad6fbd1da4821c82f512f5a8704f7807820a04b
+  languageName: node
+  linkType: hard
+
+"@scroll-tech/contracts@patch:@scroll-tech/contracts@npm%3A0.1.0#./.yarn/patches/@scroll-tech-contracts-npm-0.1.0-bc95e4befb.patch::locator=contracts%40workspace%3A.":
+  version: 0.1.0
+  resolution: "@scroll-tech/contracts@patch:@scroll-tech/contracts@npm%3A0.1.0#./.yarn/patches/@scroll-tech-contracts-npm-0.1.0-bc95e4befb.patch::version=0.1.0&hash=876503&locator=contracts%40workspace%3A."
+  checksum: 90709941bd0670d5d888695d611b8d0c0b839c0e5c703cb052c81b9d26e805a17739052c88d8a8e2dbd1b7de2812246818f870309533125c8147263e8382dbf3
   languageName: node
   linkType: hard
 
