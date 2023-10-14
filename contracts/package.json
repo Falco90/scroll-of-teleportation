@@ -26,5 +26,8 @@
     "@scroll-tech/contracts": "^0.1.0",
     "dotenv": "^16.3.1"
   },
-  "packageManager": "yarn@3.6.4"
+  "packageManager": "yarn@3.6.4",
+  "resolutions": {
+    "@scroll-tech/contracts@^0.1.0": "patch:@scroll-tech/contracts@npm%3A0.1.0#./.yarn/patches/@scroll-tech-contracts-npm-0.1.0-bc95e4befb.patch"
+  }
 }
