@@ -7,6 +7,7 @@ async function main() {
 
   const lockedAmount = parseEther("0.001");
 
+  console.log("pk:", process.env.PRIVATE_KEY)
   const lock = await hre.viem.deployContract("Lock", [unlockTime], {
     value: lockedAmount,
   });
